@@ -347,9 +347,8 @@ async function addxptopath(){
         }
     }
     // There might be a "/" at the end. remove it
-    const formattedURL = url.replace(//$/, "");
 
-    const pathList = formattedURL.split("/");
+    const pathList = url.split("/");
     const page = pathList[pathList.length - 1] == projectId ?
         "index" : pathList[pathList.length - 1];
 
