@@ -220,7 +220,7 @@ function getProvider() {
 }
 
 async function refreshAccountData(event) {
-    await fetchAccountData(provider, event);
+    await fetchAccountData(event);
 }
 
 async function onConnect(event) {
