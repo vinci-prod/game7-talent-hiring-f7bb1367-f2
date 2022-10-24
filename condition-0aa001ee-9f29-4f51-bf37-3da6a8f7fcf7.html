@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <script> 
     window.addEventListener('load', async () => {
-        const ignore = ["WEB3_CONNECT_MODAL_ID", "template", "inputNext", "eth", "sol", "error-text", "discord", "twitter", "linkedTwitter", "linkedDiscord"];
+        const ignore = ["WEB3_CONNECT_MODAL_ID", "template", "inputNext", "eth", "sol", "error-text", "discord", "twitter", "linkedTwitter", "linkedDiscord", "but", "complete"];
         var allElements = document.querySelectorAll('*[id]');
         for (var i = 0, n = allElements.length; i < n; ++i) {
         var el = allElements[i];
@@ -19,7 +19,6 @@
         }
         }
         init(); 
-            init();
         if(document.querySelector("#eth") !== null){
             document.querySelector("#eth").addEventListener("click", onConnect);
         }
@@ -34,6 +33,9 @@
         }
         if(document.querySelector("#twitter") !== null){
             document.querySelector("#twitter").addEventListener("click", openPopupT);
+        }
+        if(document.querySelector("#complete") !== null){
+            addxptopath();
         }
         
     });
@@ -86,6 +88,6 @@
         <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
         <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
         <script type="text/javascript" src="js/index.js"></script> 
-        <div id="template" class="TemplatesRootRoot baseTop"><img alt="background" style="background-image:url(https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Flogo.png?alt=media&amp;token=7c365dcc-ac6a-4ed1-a9f7-710db55fa71e)" src="https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Flogo.png?alt=media&amp;token=7c365dcc-ac6a-4ed1-a9f7-710db55fa71e" class="BrandLogo1 image_ButtonsTemplate"/><div class="FlexColumn col1"><div class="FlexColumn1 col2"><div class="Text1 title">Example Title</div><div class="Paragraph paragP">Example Subtitle</div></div><div class="FlexRow"><div class="Cardsprojects CardsprojectsP"><img src="https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Fbutton_0.png?alt=media&amp;token=6c4efb93-70a7-4767-8629-cdff022f92bf" alt="background" class="Image1 Image1P"/><span class="Paragraph1 buttonParag">example</span><div class="FlexColumn2"><div class="DividerCTA"><img class="Divider" alt="divider" src="https://file.rendit.io/n/SKAsRRePdjw4Ba27didP.svg"/><a href="#" rel="noreferrer" target=""><button class="LastWeek buttonContent">example</button></a></div></div></div><div class="Cardsprojects CardsprojectsP"><img src="https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Fbutton_1.png?alt=media&amp;token=d463876e-625c-40e8-98ca-7de826d20452" alt="background" class="Image1 Image1P"/><span class="Paragraph1 buttonParag">example</span><div class="FlexColumn2"><div class="DividerCTA"><img class="Divider" alt="divider" src="https://file.rendit.io/n/SKAsRRePdjw4Ba27didP.svg"/><a href="#" rel="noreferrer" target=""><button class="LastWeek buttonContent">example</button></a></div></div></div></div><div class="FlexRow1 row2"><a href="#"><button style="background-color:#ef233c" class="LastWeek4 buttonContent">Back</button></a></div></div></div>
+        <div id="template" class="TemplatesRootRoot baseTop"><img alt="background" style="background-image:url(https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Flogo.png?alt=media&amp;token=7c365dcc-ac6a-4ed1-a9f7-710db55fa71e)" src="https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Flogo.png?alt=media&amp;token=7c365dcc-ac6a-4ed1-a9f7-710db55fa71e" class="BrandLogo1 image_ButtonsTemplate"/><div ip="" data-xp="0" class="FlexColumn col1"><div class="FlexColumn1 col2"><div class="Text1 title">Example Title</div><div class="Paragraph paragP">Example Subtitle</div></div><div class="FlexRow"><div class="Cardsprojects CardsprojectsP"><img src="https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Fbutton_0.png?alt=media&amp;token=6c4efb93-70a7-4767-8629-cdff022f92bf" alt="background" class="Image1 Image1P"/><span class="Paragraph1 buttonParag">example</span><div class="FlexColumn2"><div class="DividerCTA"><img class="Divider" alt="divider" src="https://file.rendit.io/n/SKAsRRePdjw4Ba27didP.svg"/><a href="#" rel="noreferrer" target=""><button class="LastWeek buttonContent">example</button></a></div></div></div><div class="Cardsprojects CardsprojectsP"><img src="https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Fbutton_1.png?alt=media&amp;token=d463876e-625c-40e8-98ca-7de826d20452" alt="background" class="Image1 Image1P"/><span class="Paragraph1 buttonParag">example</span><div class="FlexColumn2"><div class="DividerCTA"><img class="Divider" alt="divider" src="https://file.rendit.io/n/SKAsRRePdjw4Ba27didP.svg"/><a href="#" rel="noreferrer" target=""><button class="LastWeek buttonContent">example</button></a></div></div></div></div><div class="FlexRow1 row2"><a href="#"><button style="background-color:#ef233c" class="LastWeek4 buttonContent">Back</button></a></div></div></div>
     </body>
 </html>

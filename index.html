@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <script> 
     window.addEventListener('load', async () => {
-        const ignore = ["WEB3_CONNECT_MODAL_ID", "template", "inputNext", "eth", "sol", "error-text", "discord", "twitter", "linkedTwitter", "linkedDiscord"];
+        const ignore = ["WEB3_CONNECT_MODAL_ID", "template", "inputNext", "eth", "sol", "error-text", "discord", "twitter", "linkedTwitter", "linkedDiscord", "but", "complete"];
         var allElements = document.querySelectorAll('*[id]');
         for (var i = 0, n = allElements.length; i < n; ++i) {
         var el = allElements[i];
@@ -19,7 +19,6 @@
         }
         }
         init(); 
-            init();
         if(document.querySelector("#eth") !== null){
             document.querySelector("#eth").addEventListener("click", onConnect);
         }
@@ -34,6 +33,9 @@
         }
         if(document.querySelector("#twitter") !== null){
             document.querySelector("#twitter").addEventListener("click", openPopupT);
+        }
+        if(document.querySelector("#complete") !== null){
+            addxptopath();
         }
         
     });
@@ -86,6 +88,6 @@
         <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
         <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
         <script type="text/javascript" src="js/index.js"></script> 
-        <div id="template" class="root base"><img alt="background" style="background-image:url(https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Fgame7-talent-hiring-f7bb1367-f2%2Fscreen-index-b9c3272b-7a09-4b8d-9f32-e60670090462%2Flogo.png?alt=media&amp;token=5a968282-6b1d-443c-b621-bc9af0f8c9d0)" src="https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Fgame7-talent-hiring-f7bb1367-f2%2Fscreen-index-b9c3272b-7a09-4b8d-9f32-e60670090462%2Flogo.png?alt=media&amp;token=5a968282-6b1d-443c-b621-bc9af0f8c9d0" class="BrandLogo image"/><div class="rightCol rightColP"><div class="rightCol1"><div class="text1 title">Example Title</div><div class="text2 subtitle">Example Subtitle</div><div class="parag paragP">Example Text</div></div><a href="condition-923b8251-c138-4de5-8f52-63b3f9cc6c24"><button style="background-color:#ef233c" class="button buttonP">Next</button></a></div></div>
+        <div id="template" class="root base"><img alt="background" style="background-image:url(https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Fgame7-talent-hiring-f7bb1367-f2%2Fscreen-index-b9c3272b-7a09-4b8d-9f32-e60670090462%2Flogo.png?alt=media&amp;token=ba914bec-da9a-49cd-9ce0-fe50910ceda2)" src="https://firebasestorage.googleapis.com/v0/b/vinci-prod.appspot.com/o/projectData%2Fgame7-talent-hiring-f7bb1367-f2%2Fscreen-index-b9c3272b-7a09-4b8d-9f32-e60670090462%2Flogo.png?alt=media&amp;token=ba914bec-da9a-49cd-9ce0-fe50910ceda2" class="BrandLogo image"/><div class="rightCol rightColP"><div class="rightCol1"><div class="text1 title">Welcome to Game7</div><div class="text2 subtitle">Follow the instructions to apply to a job opening</div><div class="parag paragP"></div></div><a href="condition-923b8251-c138-4de5-8f52-63b3f9cc6c24"><button style="background-color:#ef233c" class="button buttonP">Next</button></a></div></div>
     </body>
 </html>
